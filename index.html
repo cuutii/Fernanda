@@ -3,19 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de Servicios RRHH</title>
+
+  <!-- ================= SEO ================= -->
+  <title>Fernanda | Consultora freelance en Recursos Humanos</title>
+  <meta name="description" content="Soy Fernanda, consultora freelance en Recursos Humanos: reclutamiento y selección, capacitación, nómina, cultura organizacional y evaluación de desempeño. Conversemos sobre tu equipo.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Fernanda">
+
+  <!-- ============ Open Graph (vista previa al compartir el enlace) ============ -->
+  <meta property="og:title" content="Fernanda | Consultora freelance en Recursos Humanos">
+  <meta property="og:description" content="Consultoría independiente en Recursos Humanos: selección, capacitación, nómina, cultura organizacional y evaluación de desempeño, a la medida de tu equipo.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Fernanda — Consultoría en Recursos Humanos">
+
+  <!-- COMPLETAR ANTES DE PUBLICAR: descomentar y rellenar con la URL definitiva
+       del sitio (og:url) y la URL de una imagen de previsualización (og:image,
+       formato JPG/PNG de al menos 1200x630 px). No se publican datos falsos.
+  <meta property="og:url" content="https://ejemplo.com/">
+  <meta property="og:image" content="https://ejemplo.com/imagen-destacada.jpg">
+  -->
+
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
+  <!-- Enlace de accesibilidad: invisible hasta que se llega con el teclado -->
+  <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
+
   <!-- ================= HEADER ================= -->
   <header>
-    <h1>Consultoría en Recursos Humanos</h1>
-    <nav>
+    <h1>
+      Fernanda
+      <span>Consultora de Recursos Humanos freelance</span>
+    </h1>
+
+    <nav aria-label="Navegación principal">
       <ul>
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#nosotros">Sobre nosotros</a></li>
+        <li><a href="#como-trabajo">Cómo trabajo</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -26,43 +54,177 @@
 
     <!-- ===== INICIO ===== -->
     <section id="inicio">
-      <h2>Bienvenido</h2>
-      <p>Soluciones en gestión de talento para tu empresa.</p>
+      <h2>Recursos Humanos a la medida de tu equipo</h2>
+      <p class="destacado">Soy Fernanda, consultora freelance en Recursos Humanos. Trabajo de forma directa con empresas que necesitan sumar personas, ordenar su gestión o mejorar el clima interno: sin estructura de departamento grande, sin intermediarios y con una propuesta armada para tu caso.</p>
+      <p class="acciones">
+        <a class="btn" href="#contacto">Conversemos</a>
+        <a class="btn btn-secundario" href="#servicios">Ver los servicios</a>
+      </p>
     </section>
 
     <!-- ===== SERVICIOS ===== -->
     <section id="servicios">
       <h2>Servicios</h2>
+      <p class="intro">Estos son los servicios que ofrezco. Cada uno se puede contratar por separado o combinar con otro, según lo que esté necesitando tu equipo.</p>
+
       <ul>
-        <li>Reclutamiento y selección</li>
-        <li>Capacitación y desarrollo</li>
-        <li>Consultoría en RRHH</li>
-        <li>Gestión de nómina</li>
+        <li>
+          <article>
+            <h3>Reclutamiento y selección</h3>
+            <p>Definimos el perfil en conjunto, preparo la búsqueda, filtro candidatos y te presento una lista corta con los perfiles más interesantes, con las entrevistas coordinadas por mí. No me limito a revisar postulaciones: hago búsqueda activa.</p>
+            <p class="para-quien"><strong>Para quién:</strong> empresas que necesitan sumar gente y no quieren (o no pueden) destinar a una persona del equipo a hacer la búsqueda.</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Capacitación y desarrollo</h3>
+            <p>Diseño y coordino capacitaciones a medida, en formato presencial o virtual, a partir de lo que el equipo realmente necesita: inducción de ingresos, herramientas de gestión, liderazgo o los temas que estén apareciendo en el día a día.</p>
+            <p class="para-quien"><strong>Para quién:</strong> equipos en crecimiento, con jefaturas recién asumidas o con brechas de conocimiento que ya se notan en los resultados.</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Consultoría y auditoría de RRHH</h3>
+            <p>Reviso cómo está organizada hoy la gestión de Recursos Humanos: procesos, documentación, legajos y prácticas de cada área. El resultado es un diagnóstico claro, con prioridades ordenadas y un plan de acción concreto.</p>
+            <p class="para-quien"><strong>Para quién:</strong> organizaciones que sienten que algo no funciona, que están por crecer o que necesitan ordenar la gestión antes de incorporar más personas.</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Gestión de nómina y liquidación de sueldos</h3>
+            <p>Me hago cargo del cálculo y el control de las liquidaciones (sueldo, aguinaldo, licencias y demás conceptos), junto con el armado y la revisión de la documentación de cada persona.</p>
+            <p class="para-quien"><strong>Para quién:</strong> PyMEs que prefieren dejar este proceso en manos externas y evitar errores o cuellos de botella cuando llega el fin de mes.</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Cultura organizacional y clima laboral</h3>
+            <p>Aplico encuestas de clima, entrevistas y reuniones focalizadas para entender cómo se vive el día a día, y traduzco los resultados en acciones concretas de comunicación, reconocimiento y trabajo en equipo.</p>
+            <p class="para-quien"><strong>Para quién:</strong> equipos que notan rotación, desmotivación o conflictos recurrentes y quieren actuar antes de que se profundicen.</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Evaluación de desempeño</h3>
+            <p>Armo el sistema de evaluación (por objetivos, por competencias o mixto), preparo a quienes evalúan y hago el seguimiento de los resultados para que la conversación sobre desempeño deje de ser un trámite.</p>
+            <p class="para-quien"><strong>Para quién:</strong> empresas que ya trabajan con objetivos o que quieren empezar a medir resultados sin cargar al equipo de burocracia.</p>
+          </article>
+        </li>
       </ul>
     </section>
 
-    <!-- ===== SOBRE NOSOTROS ===== -->
-    <section id="nosotros">
-      <h2>Sobre nosotros</h2>
-      <p>Somos especialistas en Recursos Humanos, comprometidos con el crecimiento de tu organización.</p>
+    <!-- ===== CÓMO TRABAJO ===== -->
+    <section id="como-trabajo">
+      <h2>Trabajemos juntas</h2>
+      <p class="intro">No trabajo con paquetes cerrados: el proceso se arma en tres pasos y siempre arranca por entender bien el problema.</p>
+
+      <ol class="pasos" role="list">
+        <li>
+          <h3>1. Diagnóstico</h3>
+          <p>Charlamos para entender el contexto, el tamaño del equipo y qué querés resolver. De esa conversación sale un diagnóstico breve de la situación actual.</p>
+        </li>
+        <li>
+          <h3>2. Propuesta</h3>
+          <p>Recibís una propuesta con alcance, plazos, entregables y honorarios. Si algo no te convence, lo ajustamos antes de arrancar.</p>
+        </li>
+        <li>
+          <h3>3. Acompañamiento</h3>
+          <p>Pongo el plan en marcha con seguimiento cercano, revisamos los resultados en conjunto y ajustamos el rumbo si hace falta.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section id="sobre-mi">
+      <div class="sobre-mi-grid">
+        <div>
+          <h2>Sobre mí</h2>
+          <p>Soy Fernanda, consultora de Recursos Humanos freelance. Trabajo de forma independiente, así que la persona que te atiende, arma la propuesta y acompaña el proceso soy yo: no hay intermediarios ni equipos que rotan a mitad de camino.</p>
+          <p>Mi enfoque es simple: escuchar primero, ordenar después y proponer únicamente lo que hace falta. A veces eso significa decirte que un servicio no te va a resolver el problema, y prefiero ser sincera desde el primer día.</p>
+          <p>Me interesa que los Recursos Humanos dejen de ser un trámite administrativo y se conviertan en una herramienta para que las personas trabajen mejor.</p>
+        </div>
+        <div class="sobre-mi-imagen">
+          <!-- Ilustración decorativa. Cuando haya una foto real de la consultora,
+               reemplazar este archivo por la foto y ajustar el alt. -->
+          <img src="img/consultora-rrhh.svg" alt="Ilustración abstracta en verde azulado: tres figuras humanas al lado de un gráfico de barras ascendente.">
+        </div>
+      </div>
     </section>
 
     <!-- ===== CONTACTO ===== -->
     <section id="contacto">
       <h2>Contacto</h2>
-      <form>
-        <label>Nombre: <input type="text" name="nombre"></label><br>
-        <label>Email: <input type="email" name="email"></label><br>
-        <label>Mensaje: <textarea name="mensaje"></textarea></label><br>
-        <button type="submit">Enviar</button>
-      </form>
+      <p class="intro">Contame en qué punto está tu equipo y te respondo a la brevedad. Si preferís, escribime directamente por cualquiera de estos canales:</p>
+
+      <div class="contacto-grid">
+        <!-- ============================================================
+             ⚠ CONFIGURAR ANTES DE PUBLICAR ⚠
+             El formulario está conectado a Formspree, pero el ID todavía
+             no existe: hay que crear el formulario en https://formspree.io
+             y reemplazar REEMPLAZAR_POR_EL_ID_REAL por el ID real.
+             HASTA ESE MOMENTO EL ENVÍO NO FUNCIONA.
+             ============================================================ -->
+        <form action="https://formspree.io/f/REEMPLAZAR_POR_EL_ID_REAL" method="POST">
+          <!-- Asunto del mail que llega a la casilla de la consultora -->
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde la web — Fernanda, consultora de RRHH">
+
+          <div class="campo">
+            <label for="nombre">Nombre y apellido</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+          </div>
+
+          <div class="campo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="campo">
+            <label for="empresa">Empresa u organización <span class="opcional">(opcional)</span></label>
+            <input type="text" id="empresa" name="empresa" autocomplete="organization">
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+          </div>
+
+          <button type="submit">Enviar mensaje</button>
+
+          <p class="nota-form">El campo de empresa es opcional; el resto son obligatorios.</p>
+        </form>
+
+        <div>
+          <!-- COMPLETAR ANTES DE PUBLICAR: datos reales de contacto de la consultora.
+               No se inventan datos: cada uno queda marcado como "a completar". -->
+          <ul class="datos-contacto">
+            <li>
+              <strong>Correo electrónico</strong>
+              <span class="pendiente">[a completar]</span>
+            </li>
+            <li>
+              <strong>WhatsApp</strong>
+              <span class="pendiente">[a completar]</span>
+            </li>
+            <li>
+              <strong>LinkedIn</strong>
+              <span class="pendiente">[a completar]</span>
+            </li>
+            <li>
+              <strong>Ubicación y modalidad de trabajo</strong>
+              <span class="pendiente">[a completar]</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
   </main>
 
   <!-- ================= FOOTER ================= -->
   <footer>
-    <p>© 2026 Consultoría RRHH | Todos los derechos reservados</p>
+    <p><strong>Fernanda</strong> — Consultora freelance en Recursos Humanos</p>
+    <p>© 2026 Fernanda | Todos los derechos reservados</p>
+    <p><a href="#inicio">Volver al inicio</a></p>
   </footer>
 
 </body>

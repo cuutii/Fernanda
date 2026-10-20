@@ -120,3 +120,323 @@ footer {
   font-size: 0.9rem;
   color: #777;
 }
+
+/* =============================================================
+   AGREGADOS PARA LA LANDING DE CONSULTORA FREELANCE (Fernanda)
+   Bloque nuevo: no reemplaza ninguna regla de arriba, solo suma
+   estilos para las secciones nuevas (inicio ampliado, servicios,
+   cómo trabajo, sobre mí y contacto).
+   ============================================================= */
+
+/* ===== Accesibilidad ===== */
+/* .skip-link: enlace invisible que aparece solo al navegar con el
+   teclado (Tab), para saltar directamente al contenido. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+}
+
+.skip-link:focus {
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: #00796b;
+  color: #fff;
+  padding: 0.8rem 1.25rem;
+  border-radius: 0 0 6px 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Foco visible solo con teclado (mejor accesibilidad que el
+   outline por defecto del navegador). */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #00796b;
+  outline-offset: 2px;
+}
+
+/* ===== Header: nombre + bajada ===== */
+/* La bajada "Consultora de Recursos Humanos freelance" queda en su
+   propia línea, más chica y gris, debajo del nombre. */
+header h1 span {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #555;
+  letter-spacing: 0.02em;
+}
+
+header {
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+}
+
+/* ===== Botones (enlaces con forma de botón) ===== */
+/* Mismos valores que el <button> de arriba, para que las acciones
+   se vean igual que el botón de enviar. */
+.btn {
+  display: inline-block;
+  background-color: #00796b;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #004d40;
+}
+
+/* Variante secundaria: borde verde, fondo blanco. */
+.btn-secundario {
+  background-color: #ffffff;
+  color: #00796b;
+  border: 1px solid #00796b;
+}
+
+.btn-secundario:hover {
+  background-color: #f9f9fb;
+  color: #004d40;
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* ===== Inicio ===== */
+#inicio h2 {
+  font-size: 2.5rem;
+  line-height: 1.25;
+  max-width: 720px;
+}
+
+#inicio .destacado {
+  font-size: 1.2rem;
+  margin-top: 1.25rem;
+  max-width: 720px;
+}
+
+/* Párrafo introductorio de cada sección. */
+.intro {
+  max-width: 740px;
+  margin-bottom: 2.5rem;
+}
+
+/* ===== Tarjetas de servicio ===== */
+/* Complementa las reglas de #servicios ul / li de más arriba:
+   cada tarjeta tiene un h3, una explicación y una línea "Para quién". */
+#servicios li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.5rem;
+}
+
+#servicios li h3 {
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.35;
+}
+
+#servicios li p {
+  font-size: 1rem;
+}
+
+#servicios li .para-quien {
+  font-size: 0.95rem;
+  color: #777;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 0.6rem;
+  margin-top: auto;
+}
+
+#servicios li .para-quien strong {
+  color: #00796b;
+}
+
+/* ===== Cómo trabajo (pasos del proceso) ===== */
+.pasos {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.pasos li {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.pasos li:hover {
+  transform: translateY(-3px);
+  border-color: #00796b;
+}
+
+.pasos h3 {
+  font-size: 1.1rem;
+  color: #00796b;
+  margin-bottom: 0.5rem;
+}
+
+.pasos p {
+  font-size: 1rem;
+}
+
+/* ===== Sobre mí ===== */
+.sobre-mi-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.sobre-mi-grid p + p {
+  margin-top: 1rem;
+}
+
+.sobre-mi-imagen img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+}
+
+/* ===== Contacto ===== */
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.campo label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.campo .opcional {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #777;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #00796b;
+}
+
+form button {
+  align-self: flex-start;
+  min-width: 180px;
+}
+
+.nota-form {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Datos de contacto (con placeholders marcados como pendientes). */
+.datos-contacto {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.datos-contacto li {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.datos-contacto strong {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #00796b;
+  margin-bottom: 0.15rem;
+}
+
+.pendiente {
+  color: #777;
+  font-style: italic;
+}
+
+/* ===== Footer ===== */
+footer p {
+  margin-top: 0.35rem;
+}
+
+footer a {
+  color: #00796b;
+}
+
+footer strong {
+  color: #333;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 760px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 0.6rem 1.1rem;
+  }
+
+  section {
+    padding: 3rem 1.25rem;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+  }
+
+  #inicio h2 {
+    font-size: 1.9rem;
+  }
+
+  /* Las grillas pasan a una sola columna en pantalla angosta. */
+  #servicios ul,
+  .pasos,
+  .sobre-mi-grid,
+  .contacto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .acciones .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
